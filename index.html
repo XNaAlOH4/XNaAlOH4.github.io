@@ -2,7 +2,7 @@
 <html>
 <head lang="en">
   
-  <title>Brian</title>
+  <title>XZoras</title>
   <meta charset="utf-8">
   <!-- p5 JS Library -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.1.9/p5.js"></script>
@@ -14,21 +14,96 @@
     <!-- Castoro  serif -->
     <!-- Courgette, cursive -->
     <!-- Texturina serif-->
-  <link href="https://fonts.googleapis.com/css2?family=Balsamiq+Sans&family=Castoro&family=Courgette&family=Texturina:wght@200&display=swap" rel="stylesheet">
+    <!-- Open Sans sans-serif-->
+  <link href="https://fonts.googleapis.com/css2?family=Balsamiq+Sans&family=Castoro&family=Courgette&family=Texturina:wght@200family=Open+Sans:wght@300&display=swap" rel="stylesheet">
   <!-- ---------------------------------------------------------------- -->
   <link rel="stylesheet" type="text/css" href="style.css">
+  <link rel="stylesheet" type="text/css" href="html_Styles.css">
 </head>
 <body>
   <div id="Front Page">
-  	<div class="background"></div>
+  	<div class="background" style="background: #D7D4B0;"></div>
+  	<div class="top">
+      <div class="background" style="background: rgba(30,30,30, 0.3)"></div>
+      <div class="logo">XZoras</div>
+      <div class="name">Brian</div>
+    </div>
   	<header>
   	  <div class="background normalBorder" style="background: linear-gradient(135deg, rgba(245, 124, 117, 0.6) 10%,rgba(117, 179, 245,0.6) 50%, rgba(205, 247, 176,0.6) 70%);"></div>
-  	  <div class="title">
+  	  <div class="title" style="margin-bottom: 35px;">
   	    Welcome to the Start of my Project
   	  </div>
   	</header>
   	<div class="Intro">
-  		
+  	  <div class="Chem Balsamiq">
+  	  	<div class="Benzene" style="width: 200px;">
+  	  	  <svg id="Benzene" width="200" height="202" style="transform: rotate(0deg);" onclick="Benzene_Spin()">
+  	  	  	<defs>
+  	  	  	  <filter id="f1" x="0" y="0" width="200%" height="200%">
+  	  	  	    <feOffset result="offOut" in="SourceGraphic" dx/>
+  	  	  	    <feBlend />
+  	  	  	  </filter>
+  	  	  	  <linearGradient id="backdrop1" x1="0%" y1="0%" x2="100%" y2="50%">
+  	  	  	    <stop offset="0%" style="stop-color:rgb(245,245,245);stop-opacity:1" />
+  	  	  	    <stop offset="100%" style="stop-color:rgb(205,233,243);stop-opacity:1" />
+  	  	  	  </linearGradient>
+  	  	  	  <linearGradient id="backdrop2" x1="100%" y1="50%" x2="0%" y2="0%">
+  	  	  	    <stop offset="0%" style="stop-color:rgb(200, 205, 255);stop-opacity:1" />
+  	  	  	    <stop offset="100%" style="stop-color:rgb(118, 130, 255);stop-opacity:1" />
+  	  	  	  </linearGradient>
+  	  	  	</defs>
+  	  	  	<path class="Benzene_svg" d="M0 -100 L86.6 -50 L86.6 50 L0 100 L-86.6 50 L-86.6 -50 Z" fill="url(#backdrop1)"/>
+  	  	  	<line class="Benzene_svg benzene_line" x1="0" y1="-90" x2="-77.9" y2="-45" style="opacity: 1;" />
+  	  	  	<line class="Benzene_svg benzene_line" x1="-77.9" y1="45" x2="0" y2="90" style="opacity: 1;" />
+  	  	  	<line class="Benzene_svg benzene_line" x1="77.9" y1="-45" x2="77.9" y2="45" style="opacity: 1;" />
+  	  	  	<circle class="Benzene_svg benzene_circle" cx="0" cy="0" r="70" fill="none" style="opacity: 0;" />
+  	  	  	<!-- fill #071433 -->
+  	  	  </svg>
+  	  	</div>
+  	  	<div class="name">Chemistry</div>
+  	  </div>
+  	  <div class="Code Balsamiq">
+        <div class="logo" onclick="code_type()">
+          <svg class="code_svg" width="60" height="150">
+          	<g stroke="#88ccbb" stroke-width="8" stroke-linecap="round">
+          	  <line x1="54" y1="25" x2="6" y2="75" />
+              <line x1="6" y1="75" x2="54" y2="125" />
+              <!-- <path fill="none" d="M55 5 L5 55 L55 105" /> -->
+            </g>
+          </svg>
+          <svg class="code_svg" width="174" height="150">
+            <text x="0" y="100" font-size="100" fill="brown">c</text>
+            <text x="50" y="100" font-size="100" fill="brown">o</text>
+            <text x="105" y="100" font-size="100" fill="brown">o</text>
+            <text x="160" y="100" font-size="100" fill="brown">l</text>
+          </svg>
+          <svg class="code_svg" width="30" height="150">
+          	<g stroke="#FFFFFF" stroke-width="8" stroke-linecap="round">
+              <line x1="5" y1="135" x2="26" y2="15" />
+            </g>
+          </svg>
+          <svg class="code_svg" width="60" height="150">
+            <g stroke="#88ccbb" stroke-width="8" stroke-linecap="round">
+              <line x1="6" y1="25" x2="54" y2="75" />
+              <line x1="54" y1="75" x2="6" y2="125" />
+            </g>
+          </svg>
+        </div>
+  	  	<div class="name">Code</div>
+  	  </div>
+  	  <div class="Math Balsamiq">
+  	  	<svg width="200" height="200">
+          
+          <path stroke="white"/>
+          <text class="html_tag" style="display:none"></text>
+          <text class="html_tag" style="display:none"></text>
+          <text class="html_tag" style="display:none"></text>
+          <text class="html_tag" style="display:none"></text>
+          <line stroke="green"/>
+          <path stroke="white"/>
+        </svg>
+  	  	<div class="name">Math</div>
+  	  </div>
   	</div>
   </div>
   <div id="Desktop">
@@ -46,4 +121,39 @@
   <div id="socials">
   	
   </div>
+  <script>
+
+  	async function code_type() {
+	  let temp = document.getElementsByClassName("code_svg")[1].style.animation;
+	  let temp_1 = document.getElementsByClassName("code_svg")[1].style.width;
+  	  if(temp != "1.5s ease 0s 1 normal none running code_svg_width") {
+  	  	document.getElementsByClassName("code_svg")[1].style.animation = "code_svg_width 1.5s 1";
+  	    document.getElementsByClassName("code_svg")[1].style.width = "174px";
+  	  }else {
+  	  	document.getElementsByClassName("code_svg")[1].style.animation = "code_svg_shrink 1.5s 1";
+  	  	document.getElementsByClassName("code_svg")[1].style.width = "0px";
+  	  }
+  	}
+  	document.getElementsByClassName("Benzene_svg")[0].setAttribute("fill", "url(#backdrop1)")
+  	function Benzene_Spin() {
+  	  delocalise_Benzene();
+  	  document.getElementById("Benzene").style.transform = document.getElementById("Benzene").style.transform == "rotate(0deg)"? "rotate(360deg)":"rotate(0deg)";
+  	  document.getElementsByClassName("Benzene_svg")
+  	  document.getElementsByClassName("Benzene_svg")[0].setAttribute("fill", document.getElementsByClassName("Benzene_svg")[0].getAttribute("fill") ==  "url(#backdrop1)"? "url(#backdrop2)":"url(#backdrop1)")
+  	}
+
+  	function delocalise_Benzene() {
+  	  for(let i of document.getElementsByClassName("benzene_line")) {
+  	  	//ToggleShow(i);// = "none";
+  	  	i.style.opacity = (i.style.opacity == "1")? "0":"1";
+  	  }
+  	  //ToggleShow(document.getElementsByClassName("benzene_circle")[0]);
+  	  let x = document.getElementsByClassName("benzene_circle")[0].style.opacity;
+  	  document.getElementsByClassName("benzene_circle")[0].style.opacity = x=="0"? "1":"0";
+  	}
+
+  	function ToggleShow(object) {
+  	  object.style.display = object.style.display == "none"? "block": "none";
+  	}
+  </script>
 </body></html>
