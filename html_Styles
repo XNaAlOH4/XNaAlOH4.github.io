@@ -1,0 +1,12 @@
+.tag {
+      color: #88ccbb;
+    }
+
+    .html_tags {
+      color: brown;
+      fill: brown;
+    }
+
+    .tag_attribute {
+      color: green;
+    }
